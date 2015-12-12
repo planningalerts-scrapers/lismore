@@ -1,6 +1,4 @@
 <?php
-putenv("MORPH_PERIOD=lastmonth");
-
 # Lismore City Council scraper
 require 'scraperwiki.php';
 require 'simple_html_dom.php';
