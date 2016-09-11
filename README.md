@@ -1,18 +1,17 @@
 # Lismore City Council Scraper
 
-Lismore City Council involves the followings
-* Server - .NET but Java backend - Slow, slow, slow
-* Cookie tracking - Yes - JSESSION
-* Pagnation - No
-* Search Last Month - No - However, based on experience, able to pass query string with date 'date', submit via POST
+This site is a typical .NET site involves the followings.
+* Cookie - Yes
+* Pagnation - No, hardcoded to fetch up to 100 records
 * Javascript - No
-* Clearly defined data within a row - No and it is so bad that I need to make an extra call to the actual DA to read information
-* iFrame - Why??
+* Ajax - Yes
+* JSON - Yes
 
 
 Setup MORPH_PERIOD for data recovery, available options are
-* thisweek (default)
+* thisweek (default, today - 1 week)
 * thismonth
 * lastmonth
+
 
 Enjoy
