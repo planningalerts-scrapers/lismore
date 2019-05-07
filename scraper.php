@@ -78,15 +78,9 @@ foreach ($decodedStuff->data as $record) {
         'date_received'     => date('Y-m-d', strtotime($date_received))
     );
 
-    // Check if record exist, if not, INSERT, else do nothing
-    $existingRecords = scraperwiki::select("* from data where `council_reference`='" . $application['council_reference'] . "'");
-    if (count($existingRecords) == 0) {
-        print ("Saving record " . $application['council_reference'] . ' - ' . $address . "\n");
-        // print_r ($application);
-        scraperwiki::save(array('council_reference'), $application);
-    } else {
-        print ("Skipping already saved record " . $application['council_reference'] . "\n");
-    }
+    print ("Saving record " . $application['council_reference'] . ' - ' . $address . "\n");
+    // print_r ($application);
+    scraperwiki::save(array('council_reference'), $application);
 }
 
 ?>
