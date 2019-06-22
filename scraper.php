@@ -18,7 +18,7 @@ switch(getenv('MORPH_PERIOD')) {
         break;
     case 'thisweek' :
     default         :
-        $datefrom = date('d/m/Y', strtotime('-1 week'));
+        $datefrom = date('d/m/Y', strtotime('-30 days'));
         $dateto   = date('d/m/Y');
         break;
 }
