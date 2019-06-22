@@ -73,7 +73,6 @@ foreach ($decodedStuff->data as $record) {
         'address'           => $address,
         'description'       => $description,
         'info_url'          => $infourl_base . $record[0],
-        'comment_url'       => $comment_base,
         'date_scraped'      => date('Y-m-d'),
         'date_received'     => date('Y-m-d', strtotime($date_received))
     );
